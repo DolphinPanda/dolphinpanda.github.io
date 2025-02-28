@@ -511,6 +511,6 @@ By addressing these ethical dimensions—privacy, fairness, accuracy, accountabi
 ---
 
 ## Source Codes and Datasets
-Upload your model files and dataset into a GitHub repo and add the link here. 
+
 https://github.com/DolphinPanda/itd214_proj
 https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews/data 
