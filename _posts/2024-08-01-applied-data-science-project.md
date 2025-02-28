@@ -32,10 +32,10 @@ Our project leverages data science to enhance Sephora’s online sales by provid
 ![image](https://github.com/user-attachments/assets/18b13e26-6d39-46be-8090-026d9786c7fc)
 
 ##### Handle Missing Values in 'review_text'
-###### Overview
+##### Overview
 The column `review_text` is critical for sentiment analysis as it contains the textual data required to determine customer sentiment. Since our analysis heavily relies on this text data, we must ensure there are no missing values. The approach we'll take is to remove any rows where the `review_text` is missing. This ensures that our dataset only contains complete reviews, which are valid for analysis.
 
-###### Actions
+##### Actions
 - Remove rows with null values in the `review_text` column.
 - Confirm that all missing `review_text` values have been successfully removed from the dataset.
 
@@ -53,6 +53,14 @@ The column `review_text` is critical for sentiment analysis as it contains the t
     - Confirmed the number of duplicates removed and verified the new shape of the dataset.
 
 This step is crucial to maintain the integrity of the dataset and to ensure that subsequent preprocessing and modeling steps are based on unique and accurate data.
+
+#### Explore Rating Distribution
+##### Overview
+To predict customer sentiment, it's important to first understand the distribution of ratings given by customers. Ratings are a numerical representation of sentiment, where higher ratings typically indicate more positive sentiment. By exploring the rating distribution, we can gain insights into the overall sentiment towards the beauty products and identify any potential skewness or biases in the data.
+
+##### Actions
+- Visualize the distribution of ratings using a histogram.
+- Calculate summary statistics for the ratings to understand central tendency and spread.
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
