@@ -28,9 +28,31 @@ Our project leverages data science to enhance Sephora’s online sales by provid
 - Use `df.isnull().sum()` to count the number of missing values in each column.
 - This helps identify which columns have missing data and how many missing values they contain.
 
-![image](https://github.com/user-attachments/assets/8544d4e0-a1b2-401d-98f6-4a057b2979ec)   ![image](https://github.com/user-attachments/assets/18b13e26-6d39-46be-8090-026d9786c7fc)
+![image](https://github.com/user-attachments/assets/8544d4e0-a1b2-401d-98f6-4a057b2979ec)   
+![image](https://github.com/user-attachments/assets/18b13e26-6d39-46be-8090-026d9786c7fc)
 
+##### Handle Missing Values in 'review_text'
+###### Overview
+The column `review_text` is critical for sentiment analysis as it contains the textual data required to determine customer sentiment. Since our analysis heavily relies on this text data, we must ensure there are no missing values. The approach we'll take is to remove any rows where the `review_text` is missing. This ensures that our dataset only contains complete reviews, which are valid for analysis.
 
+###### Actions
+- Remove rows with null values in the `review_text` column.
+- Confirm that all missing `review_text` values have been successfully removed from the dataset.
+
+#### Data Cleaning: Checking for Duplicates
+
+- **Objective:**  
+  Ensure that each review in the dataset is unique to prevent any bias or over-representation in the analysis and model training.
+
+- **Steps Performed:**  
+  - **Identify Duplicates:**  
+    - Checked for duplicate entries based on the `review_text` column.
+  - **Remove Duplicates:**  
+    - Dropped duplicate rows to maintain a dataset of unique review entries.
+  - **Verification:**  
+    - Confirmed the number of duplicates removed and verified the new shape of the dataset.
+
+This step is crucial to maintain the integrity of the dataset and to ensure that subsequent preprocessing and modeling steps are based on unique and accurate data.
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
