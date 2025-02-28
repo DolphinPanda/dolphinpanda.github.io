@@ -174,7 +174,9 @@ Below are the confusion matrices and classification reports for each model, high
 #### **1. Logistic Regression**
 
 **Confusion Matrix:**
+
 <img width="545" alt="image" src="https://github.com/user-attachments/assets/62b065d7-5485-457b-a1b8-2e60054565b7" />
+
 **Classification Report:**
 - **Negative Class:** precision = 0.57, recall = 0.86, F1 = 0.69  
 - **Positive Class:** precision = 0.97, recall = 0.86, F1 = 0.91  
@@ -193,7 +195,9 @@ Below are the confusion matrices and classification reports for each model, high
 #### **2. Naive Bayes**
 
 **Confusion Matrix:**
+
 <img width="542" alt="image" src="https://github.com/user-attachments/assets/1e3ac9f1-92ff-4663-a127-275dba9b2f15" />
+
 **Classification Report:**
 - **Negative Class:** precision = 0.52, recall = 0.84, F1 = 0.64  
 - **Positive Class:** precision = 0.90, recall = 0.83, F1 = 0.86  
@@ -213,6 +217,7 @@ Below are the confusion matrices and classification reports for each model, high
 **Confusion Matrix:**
 
 <img width="555" alt="image" src="https://github.com/user-attachments/assets/97d49998-aa1b-439c-b552-77623b505db4" />
+
 **Classification Report:**
 - **Negative Class:** precision = 0.57, recall = 0.87, F1 = 0.69  
 - **Positive Class:** precision = 0.97, recall = 0.86, F1 = 0.91  
@@ -230,6 +235,7 @@ Below are the confusion matrices and classification reports for each model, high
 #### **4. Random Forest**
 
 **Confusion Matrix:**
+
 <img width="555" alt="image" src="https://github.com/user-attachments/assets/a60d12e1-f34d-42df-9889-37a16ceff307" />
 
 **Classification Report:**
