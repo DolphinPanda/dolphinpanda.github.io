@@ -28,7 +28,7 @@ Our project leverages data science to enhance Sephora’s online sales by provid
 - Use `df.isnull().sum()` to count the number of missing values in each column.
 - This helps identify which columns have missing data and how many missing values they contain.
 
-![image](https://github.com/user-attachments/assets/8544d4e0-a1b2-401d-98f6-4a057b2979ec) ![image](https://github.com/user-attachments/assets/18b13e26-6d39-46be-8090-026d9786c7fc)
+![image](https://github.com/user-attachments/assets/8544d4e0-a1b2-401d-98f6-4a057b2979ec)   ![image](https://github.com/user-attachments/assets/18b13e26-6d39-46be-8090-026d9786c7fc)
 
 
 
