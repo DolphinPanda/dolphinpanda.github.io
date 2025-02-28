@@ -173,16 +173,7 @@ Below are the confusion matrices and classification reports for each model, high
 
 #### **1. Logistic Regression**
 
-**Confusion Matrix:**
-
 <img width="545" alt="image" src="https://github.com/user-attachments/assets/62b065d7-5485-457b-a1b8-2e60054565b7" />
-
-**Classification Report:**
-- **Negative Class:** precision = 0.57, recall = 0.86, F1 = 0.69  
-- **Positive Class:** precision = 0.97, recall = 0.86, F1 = 0.91  
-- **Accuracy:** 0.86  
-- **Macro Avg (F1):** 0.80  
-- **Weighted Avg (F1):** 0.87  
 
 **Key Observations:**  
 - High precision for the positive class (0.97), indicating few negative reviews labeled as positive.  
@@ -194,16 +185,7 @@ Below are the confusion matrices and classification reports for each model, high
 
 #### **2. Naive Bayes**
 
-**Confusion Matrix:**
-
 <img width="542" alt="image" src="https://github.com/user-attachments/assets/1e3ac9f1-92ff-4663-a127-275dba9b2f15" />
-
-**Classification Report:**
-- **Negative Class:** precision = 0.52, recall = 0.84, F1 = 0.64  
-- **Positive Class:** precision = 0.90, recall = 0.83, F1 = 0.86  
-- **Accuracy:** 0.83  
-- **Macro Avg (F1):** 0.75  
-- **Weighted Avg (F1):** 0.80  
 
 **Key Observations:**  
 - Lowest overall accuracy (83%).  
@@ -214,16 +196,7 @@ Below are the confusion matrices and classification reports for each model, high
 
 #### **3. Linear SVM**
 
-**Confusion Matrix:**
-
 <img width="555" alt="image" src="https://github.com/user-attachments/assets/97d49998-aa1b-439c-b552-77623b505db4" />
-
-**Classification Report:**
-- **Negative Class:** precision = 0.57, recall = 0.87, F1 = 0.69  
-- **Positive Class:** precision = 0.97, recall = 0.86, F1 = 0.91  
-- **Accuracy:** 0.86  
-- **Macro Avg (F1):** 0.80  
-- **Weighted Avg (F1):** 0.87  
 
 **Key Observations:**  
 - Very similar results to Logistic Regression, with 86% accuracy.  
@@ -234,16 +207,7 @@ Below are the confusion matrices and classification reports for each model, high
 
 #### **4. Random Forest**
 
-**Confusion Matrix:**
-
 <img width="555" alt="image" src="https://github.com/user-attachments/assets/a60d12e1-f34d-42df-9889-37a16ceff307" />
-
-**Classification Report:**
-- **Negative Class:** precision = 0.76, recall = 0.58, F1 = 0.66  
-- **Positive Class:** precision = 0.91, recall = 0.96, F1 = 0.94  
-- **Accuracy:** 0.89  
-- **Macro Avg (F1):** 0.80  
-- **Weighted Avg (F1):** 0.89  
 
 **Key Observations:**  
 - Highest overall accuracy (89%), driven by excellent positive class performance (precision 0.91, recall 0.96).  
