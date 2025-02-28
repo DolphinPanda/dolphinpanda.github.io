@@ -512,5 +512,5 @@ By addressing these ethical dimensions—privacy, fairness, accuracy, accountabi
 
 ## Source Codes and Datasets
 
-https://github.com/DolphinPanda/itd214_proj
+https://github.com/DolphinPanda/itd214_proj \n
 https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews/data 
