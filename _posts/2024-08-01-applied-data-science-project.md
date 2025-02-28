@@ -165,6 +165,120 @@ Compare multiple classification models using not only accuracy but also confusio
 - The script prints the confusion matrix and classification report for each model, enabling a comprehensive comparison.
 - The best model can then be identified based on a balanced evaluation of accuracy and detailed class-wise performance metrics.
 
+### Model Comparison Evaluation
+
+Below are the confusion matrices and classification reports for each model, highlighting performance on both the *negative* and *positive* classes:
+
+---
+
+#### **1. Logistic Regression**
+
+**Confusion Matrix:**
+<img width="545" alt="image" src="https://github.com/user-attachments/assets/62b065d7-5485-457b-a1b8-2e60054565b7" />
+**Classification Report:**
+- **Negative Class:** precision = 0.57, recall = 0.86, F1 = 0.69  
+- **Positive Class:** precision = 0.97, recall = 0.86, F1 = 0.91  
+- **Accuracy:** 0.86  
+- **Macro Avg (F1):** 0.80  
+- **Weighted Avg (F1):** 0.87  
+
+**Key Observations:**  
+- High precision for the positive class (0.97), indicating few negative reviews labeled as positive.  
+- Strong negative recall (0.86) but moderate negative precision (0.57).  
+- Overall accuracy of 86% with potential to improve negative precision.
+
+
+---
+
+#### **2. Naive Bayes**
+
+**Confusion Matrix:**
+<img width="542" alt="image" src="https://github.com/user-attachments/assets/1e3ac9f1-92ff-4663-a127-275dba9b2f15" />
+**Classification Report:**
+- **Negative Class:** precision = 0.52, recall = 0.84, F1 = 0.64  
+- **Positive Class:** precision = 0.90, recall = 0.83, F1 = 0.86  
+- **Accuracy:** 0.83  
+- **Macro Avg (F1):** 0.75  
+- **Weighted Avg (F1):** 0.80  
+
+**Key Observations:**  
+- Lowest overall accuracy (83%).  
+- Negative precision is the lowest (0.52), though recall is decent (0.84).  
+- Positive performance is acceptable but not as high as other models.
+
+---
+
+#### **3. Linear SVM**
+
+**Confusion Matrix:**
+
+<img width="555" alt="image" src="https://github.com/user-attachments/assets/97d49998-aa1b-439c-b552-77623b505db4" />
+**Classification Report:**
+- **Negative Class:** precision = 0.57, recall = 0.87, F1 = 0.69  
+- **Positive Class:** precision = 0.97, recall = 0.86, F1 = 0.91  
+- **Accuracy:** 0.86  
+- **Macro Avg (F1):** 0.80  
+- **Weighted Avg (F1):** 0.87  
+
+**Key Observations:**  
+- Very similar results to Logistic Regression, with 86% accuracy.  
+- Negative precision remains moderate (0.57) but negative recall is strong (0.87).  
+- Positive precision is high (0.97), indicating minimal misclassification of negative reviews as positive.
+
+---
+
+#### **4. Random Forest**
+
+**Confusion Matrix:**
+<img width="555" alt="image" src="https://github.com/user-attachments/assets/a60d12e1-f34d-42df-9889-37a16ceff307" />
+
+**Classification Report:**
+- **Negative Class:** precision = 0.76, recall = 0.58, F1 = 0.66  
+- **Positive Class:** precision = 0.91, recall = 0.96, F1 = 0.94  
+- **Accuracy:** 0.89  
+- **Macro Avg (F1):** 0.80  
+- **Weighted Avg (F1):** 0.89  
+
+**Key Observations:**  
+- Highest overall accuracy (89%), driven by excellent positive class performance (precision 0.91, recall 0.96).  
+- Negative recall is the lowest (0.58), missing many negative reviews.  
+- Negative precision is relatively high (0.76), meaning negative predictions are fairly accurate when made.
+
+---
+
+### Overall Insights
+
+1. **Accuracy:**  
+   - **Random Forest** leads with 89%.  
+   - **Logistic Regression** and **Linear SVM** both achieve ~86%.  
+   - **Naive Bayes** trails at 83%.
+
+2. **Negative Class Performance:**  
+   - **Logistic Regression** and **Linear SVM**: High recall (0.86–0.87) but moderate precision (~0.57).  
+   - **Random Forest**: Higher precision (0.76) but lower recall (0.58).  
+   - **Naive Bayes**: Lowest negative precision (0.52) among the four.
+
+3. **Positive Class Performance:**  
+   - **Random Forest** excels in positive precision (0.91) and recall (0.96).  
+   - **Logistic Regression** and **Linear SVM** have top precision (~0.97) with recall ~0.86.  
+   - **Naive Bayes** offers decent positive precision (0.90) and recall (0.83).
+
+4. **Choosing the Best Model:**  
+   - If **overall accuracy** is the priority, **Random Forest** stands out (89%).  
+   - If **capturing negative feedback** is crucial, **Logistic Regression** or **Linear SVM** may be better due to higher negative recall.  
+   - If a **balanced approach** is needed, consider additional fine-tuning or advanced feature engineering to improve negative precision without sacrificing overall accuracy.
+
+---
+
+### Conclusion & Recommendations
+
+- **Model Selection:**  
+  - **Random Forest**: Best overall accuracy and strong positive metrics but lower negative recall.  
+  - **Logistic Regression** / **Linear SVM**: Strong negative recall, moderate precision, and competitive accuracy.  
+  - **Naive Bayes**: Generally weaker performance across classes.
+
+
+These recommendations aim to balance the need for accurately identifying dissatisfied customers (negative reviews) and maintaining high overall accuracy, ultimately supporting Sephora’s goal of improving online channel sales.
 ---
 ### Optimized Pipeline Training Documentation
 
